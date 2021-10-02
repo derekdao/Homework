@@ -1,0 +1,28 @@
+.meta {
+  background-color: red;
+  height: 400px;
+  float: left;
+  width: 60%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+.alpha {
+  background-color: green;
+  height: 200px;
+  float: right;
+  width: 40%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.last {
+  background-color: blue;
+  height: 200px;
+  float: left;
+  width: 40%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
