@@ -1,25 +1,24 @@
-.meta { 
+body {
+  margin: 0;
+}
+img {max-width: 100%;}
+.meta { display: flex;
   background-color: red;
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  width: 350px;
+  height: 500px;
+  flex-direction: column;
+}
 
+.container {justify-content: flex-end;
+  display: flex;
+  box-sizing: border-box;
+  gap: 15px;
+  flex-flow: column wrap;
+  
 }
-.alpha {
-  background-color: green;
+.container-display {
+  width: calc((100%-30px) / 3);
   align-items: center;
   display: flex;
   justify-content: center;
 }
-.last {
-  background-color: blue;
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-.container {width: 100%;
-display: flex;
-box-sizing: border-box;
-gap: 15px;}
-.container-display {width: 50%;
-  height: 400px;}
