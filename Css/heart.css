@@ -1,0 +1,42 @@
+.heart {
+  background-color: #ffc0cb;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  animation: heartbeat 1s infinite;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: #ffc0cb;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  left: 25px;
+  top: 0;
+}
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(-45deg);
+}
+40% {
+    transform: scale(1.5) rotate(-45deg);
+  }
+}

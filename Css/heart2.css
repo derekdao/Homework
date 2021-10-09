@@ -1,0 +1,29 @@
+.heart {
+  background-color: #ffc0cb;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  animation: heartbeat 1s infinite;
+}
+.left {
+  background-color: #ffc0cb;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+.right {
+  background-color: #ffc0cb;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 0;
+  top: -25px;
+}
