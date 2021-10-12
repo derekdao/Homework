@@ -18,3 +18,10 @@ img:hover {
 h1 { text-align: center;
 background-color:cornsilk;
 }
+ul {list-style-type: none;
+align-content: center;}
+.container {align-items: center;}
+ul {list-style-type: none;
+    align-content: center;
+    position: absolute;
+    display: contents;}
