@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.container {
+  background-color: white;
+  display: flex;
+}
+.menu {
+  position: relative;
+  border-width: 1px;
+  border-style: ridge;
+}
+.menu li {
+  padding: 5px;
+}
+.sub-menu {
+  display: none;
+  left: 100%;
+  top: 0px;
+  position: absolute;
+  width: 200px;
+  border-width: 1px;
+  border-style: ridge;
+}
+.menu > li:hover .sub-menu {
+  display: block;
+}
+.menu > li:hover {
+  background-color: rgb(241, 242, 246);
+  cursor: pointer;
+}
+.menu a:hover {
+  color: orange;
+}
