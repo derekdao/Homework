@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form  class="form-login">
+            <h1>Sign-up</h1>
+            <div class="form-text">
+                <label>User Name</label>
+                <input type="text"> 
+            </div>
+            <div class="form-text">
+                <label>Password</label>
+                <input type="text"> 
+            </div>
+            <div class="form-text">
+                <label>Confirm Password</label>
+                <input type="text"> 
+            </div>
+            <button onclick="myFunction()">Đăng Kí</button>
+        </form>
+    </div>
+    <script> function myFunction(){
+        document.querySelectorAll(".container").innerHTML =  alert("Đăng Kí Tài Khoản Thành Công")
+    }
+    </script>
+</body>
+</html>
