@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="container">
-        <form  class="form-login">
-            <h1>Sign-up</h1>
+        <form class="form-login">
+            <h1>Đăng Kí Tài Khoản</h1>
             <div class="form-text">
-                <label>User Name</label>
-                <input type="text"> 
+                <label>Tên đăng nhập</label>
+                <input type="text" placeholder="Nhập tên tài khoản bạn muốn sử dụng" id="user_name">
+                <span class="errorInput" id="userName_required">Vui lòng điền tên đăng nhập</span>
             </div>
             <div class="form-text">
-                <label>Password</label>
-                <input type="text"> 
+                <label>Mật khẩu</label>
+                <input type="text" placeholder="Nhập mật khẩu(Mật khẩu phải từ 6 đến 32 kí tự)" id="password">
+                <span class="errorInput" id="passWord_required">Mật khẩu phải từ 6 đến 32 kí tự</span>
             </div>
             <div class="form-text">
-                <label>Confirm Password</label>
-                <input type="text"> 
+                <label>Xác nhận mật khẩu</label>
+                <input type="text" placeholder="Nhập lại mật khẩu" id="confirm_password">
+                <span class="errorInput" id="confirmPwdRequired">Thông tin không chính xác</span>
             </div>
-            <button onclick="myFunction()">Đăng Kí</button>
+            <div class="check-box">
+                <label> <input type="checkbox"> Đồng ý với <a href="">Điều khoản Dịch vụ</a> và <a href="">Chính sách Bảo mật</a></label></div>
+            <button type="button" onclick="signUpButton()">Đăng kí</button>
         </form>
     </div>
-    <script> function myFunction(){
-        document.querySelectorAll(".container").innerHTML =  alert("Đăng Kí Tài Khoản Thành Công")
-    }
+    <script src="register.js">
     </script>
 </body>
+
 </html>

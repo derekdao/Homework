@@ -7,33 +7,37 @@ a{
     text-decoration: none;
 }
 body{
-     background-color:#7ed6df ;
-    ;
+    background: linear-gradient( 
+        91deg, #2196f3, transparent);
 }
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* width: 100px;
-    height: 100px; */
-    /* background-color:#7ed6df ; */
     margin-top: 100px;
 }
 .form-login{
-    height: 500px;
+    width: 400px;
     background-color: white;
     border-radius: 10px;
     padding: 40px 30px
 }
 .form-login h1 {
+    background: linear-gradient(
+    297deg, #2196f3, transparent);
     margin-bottom: 50px;
+    color:#1d1c1a;
+    border-radius: 10px;
 }
 .form-login button {
     height: 30px;
-    width: 100%;
+    width: 50%;
     margin-bottom: 30px;
-    background-color: cadetblue;
+    background-color:#359ef1c2;
+    border-radius: 10px;
+    color: white;
+    border: none;
 }
 .form-text{
     margin-bottom: 40px;
@@ -46,6 +50,27 @@ body{
     border-bottom: 2px solid #ccc;
     margin-top: 20px;
 }
+input:focus {
+    border-left-color: burlywood;
+}
 .form-text label {
 position: absolute;
+}
+.check-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+i {
+    position: absolute;
+    margin-top: 30px;
+}
+.errorInput {
+    color: #e74c3c;
+    display:flex;
+    visibility: hidden;
+    margin-top: 3px;
 }
