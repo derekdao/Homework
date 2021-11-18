@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( 
+        91deg, #2196f3, transparent);
+}
+#calculator { 
+    width: 400px;
+    height: 550px;
+    background-color:#bdc3c7;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 3px;
+    top: 70px;
+}
+#result {
+    height: 200px;
+}
+#input-result{
+    width: 350px;
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 40px;
+    text-align: right;
+    font-size: 50px;
+}
+#keyboard {
+    height: 500px;
+}
+.operator, .number {
+    width: 55px;
+    height: 55px;
+    margin: 12px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+    font-weight: bold;
+}
