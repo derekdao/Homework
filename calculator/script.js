@@ -1,13 +1,13 @@
-let result = document.getElementById("input-result")
-let calculate=(number)=> {
-    result.value+=number;
+const result = document.getElementById("input-result");
+function clearResult() {
+  result.innerText = "";
 }
-let Result=()=> {
-    result.value=eval(result.value)
-}
-function clear(){
-    result.value = "";
-}
-function del(){
-    result.value = result.value.slice(0,-1)
+let calculate = (number) => {
+  result.value += number;
+};
+let Result = () => {
+  result.value = eval(result.value);
+};
+function del() {
+  result.value = result.value.slice(0, -1);
 }
